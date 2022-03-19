@@ -46,6 +46,7 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
 
         public void setData(String title,String summary, String rating, String date, String image){
             titleV.setText(title);
+            // Removing html tags from json data.(like <p>,<b>,<\p>)
             summary = summary.replaceAll("\\<.*?\\>", "");
             summaryV.setText(summary);
             ratingV.setText(rating);
