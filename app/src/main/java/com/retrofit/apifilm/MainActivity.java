@@ -41,14 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 recyclerView.setLayoutManager(layoutManager);
                 oAdapter = new RecycleAdapter(getApplicationContext(),(ArrayList<FilmMainResponseItem>) filmler);
                 recyclerView.setAdapter(oAdapter);
-/*
-                for(int i=0;i<response.body().size();i++){
-                Log.i("testt","Name : "+response.body().get(i).getName());
-                        Log.i("testt","Image : "+response.body().get(i).getImage().getOriginal());
-                            Log.i("testt","Rating : "+String.valueOf(response.body().get(i).getRating().getAverage()));
-                                Log.i("testt","Time : "+new SimpleDateFormat("dd/MM/yyyy", Locale.US).format(new Date(response.body().get(i).getUpdated())));
-                }
- */
+
             }
 
             @Override
