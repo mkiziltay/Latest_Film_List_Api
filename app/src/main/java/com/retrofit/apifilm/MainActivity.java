@@ -3,21 +3,14 @@ package com.retrofit.apifilm;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
 import android.util.Log;
-
 import com.retrofit.apifilm.Api.BaseUrl;
 import com.retrofit.apifilm.Api.RestApiClient;
 import com.retrofit.apifilm.Model.FilmMainResponseItem;
 import com.retrofit.apifilm.Recycle.RecycleAdapter;
-
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
